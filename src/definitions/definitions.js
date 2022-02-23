@@ -1,0 +1,7 @@
+export let MutationsTypes = {
+  ADD_NEW_TASK: "ADD_NEW_TASK",
+  DELETE_TASK: "DELETE_TASK",
+  UPDATE_TASK: "UPDATE_TASK",
+  CLEAR_ALL: "CLEAR_ALL",
+  SET_ALL: "SET_ALL"
+}
