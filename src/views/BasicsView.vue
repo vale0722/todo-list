@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide5" class="btn btn-circle">❮</a>
           <a href="#slide1" class="btn btn-circle">❯</a>
         </div>
       </div>
@@ -63,6 +63,15 @@
                     </ul>
                   </div>
                 </div>
+              <div class="w-full flex justify-center">
+                <img
+                  class="pr-4"
+                  alt="sintax"
+                  src="@/assets/lifecycle.png"
+                  width="500"
+                  height="300"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -123,6 +132,83 @@
           </div>
         </div>        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide5" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide5" class="relative w-full carousel-item">
+        <div class="hero h-full px-16">
+          <div class="flex-col hero-content">
+            <div>
+              <h1 class="text-3xl font-bold">Vuex</h1>
+              <p class="py-6">
+                Vuex es una librería para gestión del estado (State Management) de aplicaciones Vue.js. Sirve como un almacén centralizado para todos los componentes de una aplicación Vue, con reglas que garantizan que el estado se puede cambiar de manera predecible.
+              </p>
+              <h2 class="text-2xl font-bold">State Management Pattern</h2>
+              <div class="mockup-code my-4">
+                <pre data-prefix="1"><code>
+  const Counter = {
+      // state
+      data () {
+        return {
+          count: 0
+        }
+      },
+      // view
+      template: `
+        &lt;div&gt; { { count } }&lt;/div&gt;
+      `,
+      // actions
+      methods: {
+        increment () {
+          this.count++
+        }
+      }
+    }
+
+    createApp(Counter).mount('#app')
+                </code>
+                </pre>
+              </div>
+
+              <div class="w-full flex justify-center">
+                <img
+                  class="pr-4"
+                  alt="sintax"
+                  src="@/assets/vuexsintax.png"
+                  width="300"
+                  height="300"
+                />
+              </div>
+              <p class="py-6">
+                Es un escenario simple esto se maneja de forma sencilla, pero qué pasa cuando tenemos varios componentes que comparten un estado común
+              </p>
+              <h2 class="text-2xl font-bold">¿Cómo funciona?</h2>
+              <div class="w-full flex justify-center">
+                <img
+                  class="pr-4"
+                  alt="sintax"
+                  src="@/assets/vuex.png"
+                  width="500"
+                  height="500"
+                />
+              </div>
+              <p class="py-6">
+              Al definir y separar los conceptos envueltos en la gestión del estado hacemos que el código sea más mantenible.
+              </p>
+              <h2 class="text-2xl font-bold">¿Cuándo usarlo?</h2>
+
+              <p class="py-6">
+              Vuex nos ayuda a lidiar con la gestión compartida de los estados.
+              </p>
+              <p class="py-6">
+              Si nunca ha construido un SPA a gran escala y se ha lanzado directamente a Vuex, puede resultar demasiado verboso. Si la aplicación es simple, probablemente no necesitarás Vuex. Un simple Store Pattern puede servir.
+              </p>
+              <a target="_blank" class="text-pink-500 fond-bold" href="https://vuejs.org/guide/essentials/template-syntax.html#directives">Leer Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
           <a href="#slide0" class="btn btn-circle">❯</a>
         </div>
       </div>
